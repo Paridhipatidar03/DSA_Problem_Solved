@@ -17,12 +17,11 @@ public class RemoveElement {
     public static void main(String[] args) {
         RemoveElement solution = new RemoveElement();
 
-        int[] nums = {3, 2, 2, 3, 4, 5, 3}; // Example array
+        int[] nums = {3, 2, 2, 3, 4, 5, 3}; 
         int val = 3;
 
         int newLength = solution.removeElement(nums, val);
 
-        // Print the updated array (valid part only)
         System.out.println("New Length: " + newLength);
         System.out.println("Updated Array: " + Arrays.toString(Arrays.copyOf(nums, newLength)));
     }
